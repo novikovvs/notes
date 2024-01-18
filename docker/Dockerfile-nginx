@@ -1,0 +1,4 @@
+FROM bitnami/php-fpm
+
+RUN apk add --no-cache linux-headers
+RUN docker-php-ext-install sockets
